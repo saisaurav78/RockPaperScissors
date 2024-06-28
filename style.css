@@ -1,0 +1,65 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif
+}
+
+.container {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container_2{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons{
+  margin-top: 20px;
+}
+button{
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  background-color: hsl(219, 79%, 74%);
+  border-radius: 10px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 0.7;
+}
+img{
+  height: 10rem;
+  width: auto;
+}
+.computer_img{
+  transform: rotateY(180deg);
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(30px);
+  }
+}
+.player_img_bounce,.computer_img_bounce{
+   animation: bounce 0.12s linear infinite alternate;
+}
+.player_info,.computer_info{
+  margin-top: 20px;
+}
+.result{
+  margin-top: 50px;
+}
